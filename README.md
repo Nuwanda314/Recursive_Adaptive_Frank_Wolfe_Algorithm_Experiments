@@ -1,37 +1,39 @@
 # A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm
-This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper `A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter)`.
+This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper *A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter)*.
 
 ## Repository Structure
 The repository contains two examples:
 
-- `Simple_Example/`: first numerical example
-- `Linear_Quadratic_Gaussian_Contol/`: second numerical example
+- `Simple_Example/`
+- `Linear_Quadratic_Gaussian_Contol/`
 
-Each example can be run independently by executing the corresponding `main.jl` file.
+Each example can be run independently by executing the corresponding `main.jl` file in the `src/` folder.
 
 ## Requirements
 
-The code is entirely written in Julia.
+The code is entirely written in Julia. 
 
-Some examples require the following Julia packages:
+The examples require the following packages:
 
-- CairoMakie
-- Statistics
-- Random
-- LinearAlgebra
-- Printf
-- LaTeXStrings
-- JuMP
-- MosekTools
-- Distributions
-- ForwardDiff
+- Simple Example
+  - `CairoMakie`
+  - `Random`
+  - `Statistics`
 
-The required packages are installed automatically when running the scripts.
+- Robust Linear Quadratic Gaussian Control
+  - `CairoMakie`
+  - `Distributions`
+  - `ForwardDiff`
+  - `JuMP`
+  - `LinearAlgebra`
+  - `MosekTools`
+  - `Printf`
+  - `Random`
+  - `Statistics`
 
-The second example uses Mosek through `MosekTools.jl`. Therefore, a working Mosek installation and license are be required.
+The required packages are installed automatically when running the corresponding `main.jl` scripts.
 
-## Installation
-Schritte zum Aktivieren des Environments und Installieren der Pakete.
+The second example uses Mosek through `MosekTools.jl`. Therefore, a working Mosek installation and license are required.
 
 ## How to run
 
@@ -39,7 +41,8 @@ Clone or download this repository.
 
 To run the first example:
 
-```bash
+```
+bash
 cd example_1
 julia Main.jl
 ```
