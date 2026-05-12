@@ -1,18 +1,17 @@
 # A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm
-
-This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper 'A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm by Marcel Kaiser and Tobias Sutter.
+This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper 'A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter).
 
 ## Repository Structure
 The repository contains two examples:
 
-- `example_1/`: first numerical example
-- `example_2/`: second numerical example
+- `Simple_Example/`: first numerical example
+- `Linear_Quadratic_Gaussian_Contol/`: second numerical example
 
-Each example can be run independently by executing the corresponding `Main.jl` file.
+Each example can be run independently by executing the corresponding `main.jl` file.
 
 ## Requirements
 
-The code was written in Julia.
+The code is entirely written in Julia.
 
 Some examples require the following Julia packages:
 
@@ -29,23 +28,21 @@ Some examples require the following Julia packages:
 
 The required packages are installed automatically when running the scripts.
 
-The second example uses Mosek through `MosekTools.jl`. Therefore, a working Mosek installation and license may be required.
-
-
-## Requirements
-- Julia version
-Package dependencies
-- Example 1
-  - test
+The second example uses Mosek through `MosekTools.jl`. Therefore, a working Mosek installation and license are be required.
 
 ## Installation
 Schritte zum Aktivieren des Environments und Installieren der Pakete.
 
-## How to Run
-Konkrete Befehle:
-- Experimente starten
-- Auswertung erzeugen
-- Plots erzeugen
+## How to run
+
+Clone or download this repository.
+
+To run the first example:
+
+```bash
+cd example_1
+julia Main.jl
+```
 
 ## Reproducibility
 Erklären:
