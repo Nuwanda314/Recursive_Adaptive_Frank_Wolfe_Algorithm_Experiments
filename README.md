@@ -1,5 +1,5 @@
 # A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm
-This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper 'A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter).
+This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper `A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter).
 
 ## Repository Structure
 The repository contains two examples:
