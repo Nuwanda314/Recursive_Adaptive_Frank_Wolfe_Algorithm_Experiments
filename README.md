@@ -2,18 +2,16 @@
 This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper **A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm (May 2026 - Marcel Kaiser, Tobias Sutter)**.
 
 ## Repository Structure
-The repository contains two examples:
+The repository contains the code for two examples:
 
 - `Simple_Example/`
-- `Linear_Quadratic_Gaussian_Contol/`
+- `Robust_Linear_Quadratic_Gaussian_Contol/`
 
-Each example can be run independently by executing the corresponding `main.jl` file in the `src/` folder.
+Each example can be run independently by executing the corresponding `main.jl` file in the `src/` folder. The output plots are then saved in the corresponding `figures/` folder.
 
 ## Requirements
 
-The code is entirely written in Julia. 
-
-The examples require the following packages:
+The code is entirely written in Julia and requires the following packages:
 
 - Simple Example
   - `CairoMakie`
@@ -41,8 +39,7 @@ Clone or download this repository.
 
 To run the first example:
 
-```
-bash
+```bash
 cd example_1
 julia Main.jl
 ```
