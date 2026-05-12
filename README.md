@@ -1,17 +1,36 @@
 # A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm
 
-## Abstract: 
-We investigate a stochastic online variant of the classical Frank-Wolfe algorithm for minimizing a convex, differentiable objective function over a convex and compact domain. Unlike the traditional setting, we assume that both the objective function and the feasible domain are initially unknown and must be learned from data. To address this, we integrate statistical estimators into the optimization process, allowing the algorithm to iteratively refine approximations of the domain and the objective function. Our approach maintains the projection-free nature of Frank-Wolfe while adapting to the uncertainty inherent in data-driven settings. We establish convergence guarantees for the online method, showing that the optimization error scales with the accuracy of the learned estimators. Extensive experiments support our theoretical findings, demonstrating that the proposed method achieves convergence behavior comparable to classical Frank-Wolfe in scenarios with exact knowledge of domain and objective function.
+This repository contains the Julia code used to generate the evaluation data for the numerical examples in the paper 'A Recursive Domain- and Objective-Adaptive Frank-Wolfe Algorithm by Marcel Kaiser and Tobias Sutter.
 
 ## Repository Structure
-- `main.jl`: entry point for running experiments
-- `structures.jl`: problem-related data structures
-- `objective_function.jl`: objective function definitions
-- `domain_approximation.jl`: domain estimation / approximation routines
-- `oracles.jl`: linear minimization oracle and related components
-- `analyzing_procedure.jl`: postprocessing and evaluation
-- `plot_generation.jl`: generation of figures
-- `figures/`: output plots and visualizations
+The repository contains two examples:
+
+- `example_1/`: first numerical example
+- `example_2/`: second numerical example
+
+Each example can be run independently by executing the corresponding `Main.jl` file.
+
+## Requirements
+
+The code was written in Julia.
+
+Some examples require the following Julia packages:
+
+- CairoMakie
+- Statistics
+- Random
+- LinearAlgebra
+- Printf
+- LaTeXStrings
+- JuMP
+- MosekTools
+- Distributions
+- ForwardDiff
+
+The required packages are installed automatically when running the scripts.
+
+The second example uses Mosek through `MosekTools.jl`. Therefore, a working Mosek installation and license may be required.
+
 
 ## Requirements
 - Julia version
