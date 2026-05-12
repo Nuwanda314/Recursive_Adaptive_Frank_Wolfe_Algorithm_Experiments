@@ -39,22 +39,14 @@ Clone or download this repository.
 
 To run the first example:
 
-```bash
-cd example_1
-julia Main.jl
+```
+> cd Simple_Example
+> julia main.jl
 ```
 
-## Reproducibility
-Erklären:
-- welche Datei welchen Teil des Papers reproduziert
-- wo Parameter eingestellt werden
-- wo Outputs landen
+To run the second example:
 
-## Results
-Optional 1–2 Abbildungen mit kurzer Erklärung.
-
-## Citation
-BibTeX oder Paper-Zitat.
-
-## Notes
-Optional: work in progress, planned extensions, numerical caveats.
+```
+> cd Robust_Linear_Quadratic_Gaussian_Control
+> julia main.jl
+```
